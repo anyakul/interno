@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/NotoSans-Bold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/NotoSans.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/DrukWide-Medium.woff2" as="font" crossorigin>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>TAGA</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-container container">
+      <a class="header-logo" href="index.html">
+        <img src="img/logo.svg" width="73" height="74" alt="Логотип taga">
+        <span class="header-logo-text">Транспортный альянс<br> грузовых автоперевозок</span>
+      </a>
+      <div class="header-menu">
+        <button class="header-menu-button"></button>
+        <div class="header-menu-wrapper">
+          <ul class="header-menu-list">
+            <li class="header-menu-item">
+              <a class="header-menu-link">Акции</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link">Юр. Лицам</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link">Физ. Лицам</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link">Калькулятор перевозки</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link">Способы оплаты</a>
+            </li>
+          </ul>
+          <div class="header-contacts-form-wrapper">
+            <ul class="header-contacts-list">
+              <li class="header-contacts-item">
+                <a class="header-contacts-link" href="tel:88005059855">
+                  <svg width="14" height="14">
+                    <use xlink:href="img/img.svg#icon-phone"></use>
+                  </svg>
+                  <span class="phone-text">8 800-505-98-55</span>
+                </a>
+              </li>
+              <li class="header-contacts-item">
+                <a class="header-contacts-link" href="mailto:log@taga.pro">
+                  <svg width="14" height="14">
+                    <use xlink:href="img/img.svg#icon-phone"></use>
+                  </svg>
+                  log@taga.pro
+                </a>
+              </li>
+            </ul>
+            <form class="header-contacts-form form">
+              <label class="visually-hidden" for="contacts-phone-1">phone</label>
+              <input type="tel" placeholder="+7 (___) ___-__-__" id="contacts-phone-1">
+              <button class="header-contacts-form-button green-button" type="submit">Связаться</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="header-contacts">
+        <ul class="header-social social">
+          <li class="social-item">
+            <a class="social-link" aria-label="Наша компания в телеграмме">
+              <img src="img/icon-telegram.svg" width="40" height="40" alt="Телеграм">
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" aria-label="Наша компания в вотсапе">
+              <img src="img/icon-whatsapp.svg" width="40" height="40" alt="Вотсап">
+            </a>
+          </li>
+        </ul>
+        <address class="header-phone">
+          <a class="header-phone-link" href="tel:88005059855">
+            <svg width="14" height="14">
+              <use xlink:href="img/img.svg#icon-phone"></use>
+            </svg>
+            <span class="phone-text">8 800-505-98-55</span>
+          </a>
+        </address>
+      </div>
+      <a class="header-monitor-button green-button">
+        <svg width="9" height="12">
+          <use xlink:href="img/img.svg#icon-monitor"></use>
+        </svg>
+        Следить за грузом
+      </a>
+    </div>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Landing page</h1>
+    <section class="intro">
+      <div class="intro-container container">
+        <div class="intro-sliders-list">
+          <div class="intro-wrapper swiper-wrapper">
+            <div class="intro-slider swiper-slide">
+              <div class="intro-texts">
+                <span class="intro-label blue-label">Перевозки грузов по России от 300 кг</span>
+                <h2 class="intro-header">Бережная<br> <span class="special-style">доставка грузов</span> по всей России
+                </h2>
+                <p class="intro-text">
+                  <svg width="42" height="3">
+                    <use xlink:href="img/img.svg#icon-line"></use>
+                  </svg>
+                  Lorem ipsum is placeholder text commonly used in the graphic, print, publishing
+                  industries for previewing layouts
+                </p>
+              </div>
+              <form class="intro-form form">
+                <ul class="intro-form-list">
+                  <li class="intro-form-item">
+                    <label for="city-start-1" class="visually-hidden">Город загрузки</label>
+                    <input type="text" placeholder="Город загрузки *" id="city-start-1">
+                  </li>
+                  <li class="intro-form-item">
+                    <label for="city-end-1" class="visually-hidden">Город выгрузки</label>
+                    <input type="text" placeholder="Город выгрузки *" id="city-end-1">
+                  </li>
+                  <li class="intro-form-item">
+                    <label for="weight-1" class="visually-hidden">Вес</label>
+                    <input type="text" placeholder="Вес, от 300 кг *" id="weight-1">
+                  </li>
+                  <li class="intro-form-item">
+                    <label for="phone-1" class="visually-hidden">Телефон</label>
+                    <input type="tel" placeholder="+7 (___)___-__-__" id="phone-1">
+                  </li>
+                  <li class="intro-form-item">
+                    <label for="name-1" class="visually-hidden">Имя</label>
+                    <input type="tel" placeholder="Как к вам обращаться" id="name-1">
+                  </li>
+                </ul>
+                <button class="intro-form-button green-button">Рассчитать</button>
+              </form>
+            </div>
+            <div class="intro-slider swiper-slide">
+              <div class="intro-texts">
+                <span class="intro-label blue-label">Перевозки грузов по России от 300 кг</span>
+                <h2 class="intro-header">Бережная<br> <span class="special-style">доставка грузов</span> по всей России
+                </h2>
+                <p class="intro-text">
+                  <svg width="42" height="3">
+                    <use xlink:href="img/img.svg#icon-line"></use>
+                  </svg>
+                  Lorem ipsum is placeholder text commonly used in the graphic, print, publishing
+                  industries for previewing layouts
+                </p>
+              </div>
+              <form class="intro-form form">
+                <ul class="intro-form-list">
+                  <li class="intro-form-item">
+                    <label for="city-start-2" class="visually-hidden">Город загрузки</label>
+                    <input type="text" placeholder="Город загрузки *" id="city-start-2">
+                  </li>
+                  <li class="intro-form-item">
+                    <label for="city-end-2" class="visually-hidden">Город выгрузки</label>
+                    <input type="text" placeholder="Город выгрузки *" id="city-end-2">
+                  </li>
+                  <li class="intro-form-item">
+                    <label for="weight-2" class="visually-hidden">Вес</label>
+                    <input type="text" placeholder="Вес, от 300 кг *" id="weight-2">
+                  </li>
+                  <li class="intro-form-item">
+                    <label for="phone-2" class="visually-hidden">Телефон</label>
+                    <input type="tel" placeholder="+7 (___)___-__-__" id="phone-2">
+                  </li>
+                  <li class="intro-form-item">
+                    <label for="name-2" class="visually-hidden">Имя</label>
+                    <input type="tel" placeholder="Как к вам обращаться" id="name-2">
+                  </li>
+                </ul>
+                <button class="intro-form-button green-button">Рассчитать</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="intro-nav-buttons">
+          <button class="intro-button-prev"></button>
+          <button class="intro-button-next"></button>
+        </div>
+      </div>
+    </section>
+    <section class="services section">
+      <div class="services-container container">
+        <h2 class="services-header headers">Предлагаемые <span class="special-style">услуги</span></h2>
+        <ul class="services-list">
+          <li class="services-item">
+            <a class="services-item-link">
+              <span class="services-item-icon">
+                <svg width="16" height="16">
+                  <use xlink:href="img/img.svg#icon-other-city"></use>
+                </svg>
+              </span>
+              Перевозка вещей в другой город
+            </a>
+          </li>
+          <li class="services-item">
+            <a class="services-item-link">
+              <span class="services-item-icon">
+                <svg width="16" height="11">
+                  <use xlink:href="img/img.svg#icon-gazelle"></use>
+                </svg>
+              </span>
+              Забрать газель
+            </a>
+          </li>
+          <li class="services-item">
+            <a class="services-item-link">
+              <span class="services-item-icon">
+                <svg width="16" height="16">
+                  <use xlink:href="img/img.svg#icon-office"></use>
+                </svg>
+              </span>
+              Офисные переезды
+            </a>
+          </li>
+          <li class="services-item">
+            <a class="services-item-link">
+              <span class="services-item-icon">
+                <svg width="13" height="16">
+                  <use xlink:href="img/img.svg#icon-soldier"></use>
+                </svg>
+              </span>
+              Переезд военнослужащих
+            </a>
+          </li>
+          <li class="services-item">
+            <a class="services-item-link">
+              <span class="services-item-icon">
+                <svg width="16" height="16">
+                  <use xlink:href="img/img.svg#icon-express"></use>
+                </svg>
+              </span>
+              Срочные грузоперевозки
+            </a>
+          </li>
+          <li class="services-item">
+            <a class="services-item-link">
+              <span class="services-item-icon">
+                <svg width="16" height="9">
+                  <use xlink:href="img/img.svg#icon-passing"></use>
+                </svg>
+              </span>
+              Попутные грузоперевозки
+            </a>
+          </li>
+          <li class="services-item">
+            <a class="services-item-link">
+              <span class="services-item-icon">
+                <svg width="16" height="16">
+                  <use xlink:href="img/img.svg#icon-modular"></use>
+                </svg>
+              </span>
+              Перевозка сборных грузов
+            </a>
+          </li>
+          <li class="services-item">
+            <a class="services-item-link">
+              <span class="services-item-icon">
+                <svg width="16" height="12">
+                  <use xlink:href="img/img.svg#icon-large"></use>
+                </svg>
+              </span>
+              Перевозки крупногабарита
+            </a>
+          </li>
+          <li class="services-item">
+            <a class="services-item-link">
+              <span class="services-item-icon">
+                <svg width="16" height="12">
+                  <use xlink:href="img/img.svg#icon-heavy"></use>
+                </svg>
+              </span>
+              Перевозки тяжеловесных грузов
+            </a>
+          </li>
+          <li class="services-item">
+            <a class="services-item-link">
+              <span class="services-item-icon">
+                <svg width="16" height="16">
+                  <use xlink:href="img/img.svg#icon-dangerous"></use>
+                </svg>
+              </span>
+              Перевозки опасных грузов
+            </a>
+          </li>
+          <li class="services-item">
+            <a class="services-item-link">
+              <span class="services-item-icon">
+                <svg width="16" height="16">
+                  <use xlink:href="img/img.svg#icon-equipment"></use>
+                </svg>
+              </span>
+              Перевозка оборудования
+            </a>
+          </li>
+          <li class="services-item">
+            <a class="services-item-link">
+              <span class="services-item-icon">
+                <svg width="16" height="12">
+                  <use xlink:href="img/img.svg#icon-paper"></use>
+                </svg>
+              </span>
+              Грузоперевозки бумаги
+            </a>
+          </li>
+          <li class="services-item">
+            <a class="services-item-link">
+              <span class="services-item-icon">
+                <svg width="16" height="12">
+                  <use xlink:href="img/img.svg#icon-feedstock"></use>
+                </svg>
+              </span>
+              Грузоперевозки сырья
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="promo section">
+      <div class="promo-container container">
+        <div class="promo-contain">
+          <div class="promo-wrapper swiper-wrapper">
+            <div class="promo-item swiper-slide">
+              <div class="promo-texts">
+                <span class="promo-label blue-label">Акция месяца</span>
+                <h2 class="promo-header headers-small">Грузоперевозки <span class="special-style">недорого</span><br>
+                  - миф или реальность?</h2>
+                <p class="promo-text">Благодаря использованию IP - технологий и наличию транспорта партнёров во всех
+                  городах России, у нас есть уникальная
+                  возможность организации процесса перевозки с минимальными затратами.</p>
+                <form class="promo-form form">
+                  <label class="visually-hidden" for="promo-phone-1">phone</label>
+                  <input type="tel" placeholder="+7 (___) ___-__-__" id="promo-phone-1">
+                  <button class="promo-button green-button" type="submit">Участвовать в акции</button>
+                </form>
+              </div>
+              <div class="promo-discount-image">
+                <img src="img/promo-image.png" width="276" height="267" alt="promo">
+                <div class="promo-discount">
+                  <p class="promo-discount-text">Скидка</p>
+                  <p class="promo-discount-value">12%</p>
+                </div>
+              </div>
+            </div>
+            <div class="promo-item swiper-slide">
+              <div class="promo-texts">
+                <span class="promo-label blue-label">Акция месяца</span>
+                <h2 class="promo-header headers-small">Грузоперевозки <span class="special-style">недорого</span>
+                  - миф или реальность?</h2>
+                <p class="promo-text">Благодаря использованию IP - технологий и наличию транспорта партнёров во всех
+                  городах России, у нас есть уникальная
+                  возможность организации процесса перевозки с минимальными затратами.</p>
+                <form class="promo-form form">
+                  <label class="visually-hidden" for="promo-phone-2">phone</label>
+                  <input type="tel" placeholder="+7 (___) ___-__-__" id="promo-phone-2">
+                  <button class="promo-button green-button" type="submit">Участвовать в акции</button>
+                </form>
+              </div>
+              <div class="promo-discount-image">
+                <img src="img/promo-image.png" width="276" height="267" alt="promo">
+                <div class="promo-discount">
+                  <p class="promo-discount-text">Скидка</p>
+                  <p class="promo-discount-value">12%</p>
+                </div>
+              </div>
+            </div>
+            <div class="promo-item swiper-slide">
+              <div class="promo-texts">
+                <span class="promo-label blue-label">Акция месяца</span>
+                <h2 class="promo-header headers-small">Грузоперевозки <span class="special-style">недорого</span>
+                  - миф или реальность?</h2>
+                <p class="promo-text">Благодаря использованию IP - технологий и наличию транспорта партнёров во всех
+                  городах России, у нас есть уникальная
+                  возможность организации процесса перевозки с минимальными затратами.</p>
+                <form class="promo-form form">
+                  <label class="visually-hidden" for="promo-phone-3">phone</label>
+                  <input type="tel" placeholder="+7 (___) ___-__-__" id="promo-phone-3">
+                  <button class="promo-button green-button" type="submit">Участвовать в акции</button>
+                </form>
+              </div>
+              <div class="promo-discount-image">
+                <img src="img/promo-image.png" width="276" height="267" alt="promo">
+                <div class="promo-discount">
+                  <p class="promo-discount-text">Скидка</p>
+                  <p class="promo-discount-value">12%</p>
+                </div>
+              </div>
+            </div>
+            <div class="promo-item swiper-slide">
+              <div class="promo-texts">
+                <span class="promo-label blue-label">Акция месяца</span>
+                <h2 class="promo-header headers-small">Грузоперевозки <span class="special-style">недорого</span>
+                  - миф или реальность?</h2>
+                <p class="promo-text">Благодаря использованию IP - технологий и наличию транспорта партнёров во всех
+                  городах России, у нас есть уникальная
+                  возможность организации процесса перевозки с минимальными затратами.</p>
+                <form class="promo-form form">
+                  <label class="visually-hidden" for="promo-phone-4">phone</label>
+                  <input type="tel" placeholder="+7 (___) ___-__-__" id="promo-phone-4">
+                  <button class="promo-button green-button" type="submit">Участвовать в акции</button>
+                </form>
+              </div>
+              <div class="promo-discount-image">
+                <img src="img/promo-image.png" width="276" height="267" alt="promo">
+                <div class="promo-discount">
+                  <p class="promo-discount-text">Скидка</p>
+                  <p class="promo-discount-value">12%</p>
+                </div>
+              </div>
+            </div>
+            <div class="promo-item swiper-slide">
+              <div class="promo-texts">
+                <span class="promo-label blue-label">Акция месяца</span>
+                <h2 class="promo-header headers-small">Грузоперевозки <span class="special-style">недорого</span>
+                  - миф или реальность?</h2>
+                <p class="promo-text">Благодаря использованию IP - технологий и наличию транспорта партнёров во всех
+                  городах России, у нас есть уникальная
+                  возможность организации процесса перевозки с минимальными затратами.</p>
+                <form class="promo-form form">
+                  <label class="visually-hidden" for="promo-phone-5">phone</label>
+                  <input type="tel" placeholder="+7 (___) ___-__-__" id="promo-phone-5">
+                  <button class="promo-button green-button" type="submit">Участвовать в акции</button>
+                </form>
+              </div>
+              <div class="promo-discount-image">
+                <img src="img/promo-image.png" width="276" height="267" alt="promo">
+                <div class="promo-discount">
+                  <p class="promo-discount-text">Скидка</p>
+                  <p class="promo-discount-value">12%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="promo-buttons swiper-buttons">
+            <button class="button-prev"></button>
+            <button class="button-next"></button>
+          </div>
+          <div class="promo-pagination swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section class="advantages section">
+      <div class="advantages-container container">
+        <h2 class="advantages-header headers">Почему нужно
+          выбрать именно нас?</h2>
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <span class="advantages-item-icon">
+              <svg width="28" height="32">
+                <use xlink:href="img/img.svg#icon-safety"></use>
+              </svg>
+            </span>
+            <div class="advantages-item-texts">
+              <h3 class="advantages-item-header">Сохранность</h3>
+              <p class="advantages-item-text">водители проходят тщательный отбор службой безопасности, грузы
+                стоимостью до 1 млн. страхуются за наш счёт</p>
+            </div>
+          </li>
+          <li class="advantages-item">
+            <span class="advantages-item-icon">
+              <svg width="32" height="23">
+                <use xlink:href="img/img.svg#icon-speed"></use>
+              </svg>
+            </span>
+            <div class="advantages-item-texts">
+              <h3 class="advantages-item-header">Скорость</h3>
+              <p class="advantages-item-text">доставка от двери до двери без перегрузки на складах и без дополнительной
+                оплаты</p>
+            </div>
+          </li>
+          <li class="advantages-item">
+            <span class="advantages-item-icon">
+              <svg width="32" height="30">
+                <use xlink:href="img/img.svg#icon-perfection"></use>
+              </svg>
+            </span>
+            <div class="advantages-item-texts">
+              <h3 class="advantages-item-header">Совершенство</h3>
+              <p class="advantages-item-text">благодаря огромному количеству партнерских договоров и использованию IP
+                технологий, наш транспорт всегда в наличии во
+                всех городах России</p>
+            </div>
+          </li>
+          <li class="advantages-item">
+            <span class="advantages-item-icon">
+              <svg width="32" height="31">
+                <use xlink:href="img/img.svg#icon-profit"></use>
+              </svg>
+            </span>
+            <div class="advantages-item-texts">
+              <h3 class="advantages-item-header">Выгода</h3>
+              <p class="advantages-item-text">цены на перевозки ниже, так как дополнительные услуги (страхование,
+                возврат документов, адресная доставка, СМС –
+                информирование, подбор грузчиков), уже включены в стоимость</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="order section">
+      <div class="order-container container">
+        <div class="order-text-image">
+          <img class="order-image" src="img/order-image.png" width="393" height="325" alt="order">
+          <p class="order-circle-text circle-text">Транспортный альянс грузовых автоперевозок</p>
+        </div>
+        <div class="order-texts">
+          <h2 class="order-header headers-small">Быстрый заказ наших услуг</h2>
+          <p class="order-text">Введите свои данные и наш менеджер свяжеться с вами в ближайшее время!</p>
+          <form class="order-form form">
+            <ul class="order-form-list">
+              <li class="order-form-item order-form-item-socials">
+                <label class="visually-hidden" for="order-phone">Телефон</label>
+                <input type="tel" placeholder="+7 (___) ___-__-__" id="order-phone">
+                <ul class="order-social social">
+                  <li class="social-item">
+                    <a class="social-link" aria-label="Наша компания в телеграмме">
+                      <img src="img/icon-telegram.svg" width="40" height="40" alt="Телеграм">
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a class="social-link" aria-label="Наша компания в вотсапе">
+                      <img src="img/icon-whatsapp.svg" width="40" height="40" alt="Вотсап">
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="order-form-item">
+                <label class="visually-hidden" for="order-name">Имя</label>
+                <input type="text" placeholder="Как к вам обращаться" id="order-name">
+              </li>
+            </ul>
+            <button class="order-form-button green-button">Заказать услугу</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="process section">
+      <div class="process-container container">
+        <div class="process-list small-container">
+          <h2 class="process-header headers">Как мы<br> <span class="special-style">работаем</span></h2>
+          <div class="process-item">
+            <div class="process-item-texts">
+              <span class="process-item-icon">
+                <svg width="22" height="22">
+                  <use xlink:href="img/img.svg#icon-online-estimate"></use>
+                </svg>
+              </span>
+              <h3 class="process-item-header">Онлайн-расчет</h3>
+              <p class="process-item-text">Воспользуйтесь онлайн <a class="special-style" href="#">калькулятором
+                  стоимости</a> и узнайте цену</p>
+            </div>
+          </div>
+          <div class="process-item">
+            <div class="process-item-texts">
+              <span class="process-item-icon">
+                <svg width="22" height="22">
+                  <use xlink:href="img/img.svg#icon-data"></use>
+                </svg>
+              </span>
+              <h3 class="process-item-header">Уточнение данных</h3>
+              <p class="process-item-text">Если цена вам подходит, мы уточняем детали и заключаем договор</p>
+            </div>
+          </div>
+          <div class="process-item">
+            <div class="process-item-texts">
+              <span class="process-item-icon">
+                <svg width="22" height="22">
+                  <use xlink:href="img/img.svg#icon-delivery"></use>
+                </svg>
+              </span>
+              <h3 class="process-item-header">Доставка груза</h3>
+              <p class="process-item-text">Мы производим доставку груза и предоставляем отчетные документы</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="business section">
+      <div class="business-container container">
+        <div class="business-contain small-container">
+          <div class="business-texts">
+            <h2 class="business-header headers-small">Помогаем расти Вашему бизнесу</h2>
+            <p class="business-text">За счет снижения издержек на логистику и точного соблюдения графика поставок .</p>
+            <button class="business-button green-button">Заказать доставку</button>
+          </div>
+          <div class="business-images">
+            <img class="business-image" src="img/business-image.png" width="309" height="341" alt="business">
+            <img class="business-logo" src="img/logo-text.svg" width="155" height="48" alt="business">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="people section">
+      <div class="people-container container">
+        <div class="people-contain small-container">
+          <div class="people-images">
+            <img class="people-image" src="img/people-image.jpg" width="457" height="370" alt="people">
+          </div>
+          <div class="people-texts">
+            <h2 class="people-header headers-small">Сближаем частных лиц</h2>
+            <p class="people-text">Квартирные переезды под ключ и срочная доставка грузов от
+              двери до двери. Точно в срок, с заботой как к родным.</p>
+            <button class="people-button green-button">Заказать переезд</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="trust section">
+      <div class="trust-container container">
+        <div class="trust-contain small-container">
+          <h2 class="trust-header headers">Показатели надежности</h2>
+          <ul class="trust-list">
+            <li class="trust-item">
+              <div class="trust-item-icon">
+                <svg width="40" height="40">
+                  <use xlink:href="img/img.svg#icon-roads"></use>
+                </svg>
+              </div>
+              <h3 class="trust-item-header">500 000</h3>
+              <p class="trust-item-text">тысяч километров дорог
+                пройдено с грузом</p>
+            </li>
+            <li class="trust-item">
+              <div class="trust-item-icon">
+                <svg width="40" height="40">
+                  <use xlink:href="img/img.svg#icon-weight"></use>
+                </svg>
+              </div>
+              <h3 class="trust-item-header">750 000</h3>
+              <p class="trust-item-text">тонн перевезено за все время</p>
+            </li>
+            <li class="trust-item">
+              <div class="trust-item-icon">
+                <svg width="40" height="40">
+                  <use xlink:href="img/img.svg#icon-auto"></use>
+                </svg>
+              </div>
+              <h3 class="trust-item-header">6 100</h3>
+              <p class="trust-item-text">количество привлеченного
+                транспорта</p>
+            </li>
+            <li class="trust-item">
+              <div class="trust-item-icon">
+                <svg width="40" height="22">
+                  <use xlink:href="img/img.svg#icon-plane"></use>
+                </svg>
+              </div>
+              <h3 class="trust-item-header">35 000</h3>
+              <p class="trust-item-text">выполнено рейсов</p>
+            </li>
+            <li class="trust-item">
+              <div class="trust-item-icon">
+                <svg width="40" height="40">
+                  <use xlink:href="img/img.svg#icon-insurance"></use>
+                </svg>
+              </div>
+              <h3 class="trust-item-header">1 000 000</h3>
+              <p class="trust-item-text">рублей, страховка за счет
+                компании</p>
+            </li>
+            <li class="trust-item">
+              <div class="trust-item-icon">
+                <svg width="40" height="40">
+                  <use xlink:href="img/img.svg#icon-age"></use>
+                </svg>
+              </div>
+              <h3 class="trust-item-header">15</h3>
+              <p class="trust-item-text">лет в логистике</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="btn-up btn-up-hide btn-up_hide"></div>
+  </main>
+  <footer class="footer">
+    <div class="footer-section">
+      <div class="footer-container container">
+        <div class="footer-logo-payment">
+          <img class="footer-logo" src="img/logo.svg" width="98" height="99" alt="Логотип taga">
+          <ul class="footer-payment">
+            <li class="footer-payment-item">
+              <img src="img/logo-mastercard.svg" width="40" height="24" alt="mastercard">
+            </li>
+            <li class="footer-payment-item">
+              <img src="img/logo-visa.svg" width="50" height="16" alt="visa">
+            </li>
+            <li class="footer-payment-item">
+              <img src="img/logo-mir.svg" width="50" height="18" alt="mir">
+            </li>
+            <li class="footer-payment-item">
+              <img src="img/logo-yandex-money.svg" width="50" height="20" alt="yandex-money">
+            </li>
+          </ul>
+        </div>
+        <div class="footer-menu">
+          <div class="footer-menu-part footer-menu-part-services">
+            <h3 class="footer-menu-header">Услуги</h3>
+            <ul class="footer-menu-list">
+              <li class="footer-menu-item">
+                <a href="#">Квартирный переезд</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#">Перевозка вещей межгород</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#">Переезд военнослужащих</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#">Попутные грузы</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#">Крупногабаритные грузы</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#">Тяжеловесные грузы</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#">Опасные грузы</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#">Перевозка оборудования</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#">Офисные переезды</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#">Сборные грузоперевозки</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#">Срочные грузоперевозки</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-menu-part footer-menu-part-info">
+            <h3 class="footer-menu-header">Информация</h3>
+            <ul class="footer-menu-list">
+              <li class="footer-menu-item">
+                <a href="#">О компании</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#">Акции</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#">Юр. лицам</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#">Физ. лицам</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#">Для военных</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#">Страхование</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#">Выполненные работы</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#">Работа в компании</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#">Отзывы</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#">Документы</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-menu-part footer-menu-part-useful">
+            <h3 class="footer-menu-header">Полезное</h3>
+            <ul class="footer-menu-list">
+              <li class="footer-menu-item">
+                <a href="#">Калькулятор переезда</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#">Маршруты и тарифы</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#">Калькулятор перевозки</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#">Часто задаваемые вопросы</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#">Приглашения к сотрудничеству</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#">Всё о переезде</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#">Всё о грузоперевозках</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#">Виды транспорта</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#">Способы оплаты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-menu-part footer-menu-part-contacts">
+            <h3 class="footer-menu-header">ТК ТАГА</h3>
+            <ul class="footer-menu-list">
+              <li class="footer-menu-item">
+                <a href="#">Бережная доставка по РФ</a>
+              </li>
+              <li class="footer-menu-item">
+                <a class="footer-menu-link" href="tel:88005059855">
+                  8 800-505-98-55
+                </a>
+              </li>
+              <li class="footer-menu-item">
+                <a class="footer-menu-link" href="mailto:log@taga.pro">
+                  log@taga.pro
+                </a>
+              </li>
+              <li class="footer-menu-item">
+                ИНН/КПП: 4825087024 / 482501001
+              </li>
+              <li class="footer-menu-item">
+                ОГРН: 112483000037
+              </li>
+              <li class="footer-menu-item">
+                Банк: ПАО СБЕРБАНК ОТДЕЛЕНИЕ N8593
+              </li>
+              <li class="footer-menu-item">
+                К/С: 30101810800000000604
+              </li>
+              <li class="footer-menu-item">
+                К/С: 40702810235000004134
+              </li>
+              <li class="footer-menu-item footer-menu-item-file">
+                <a href="img/people-image.jpg" download>
+                  Скачать карточку предприятия
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-section footer-section-copyright">
+      <div class="footer-copyright container">
+        <p class="footer-copyright-text-big">© ТК ТАГА. Все права защищены Законом РФ.</p>
+        <a class="footer-copyright-text-big">© Соглашение о ПЕРСОНАЛьНЫХ ДАННЫХ.</a>
+        <p class="footer-copyright-text">Сайт разработан веб студией YOWA</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>

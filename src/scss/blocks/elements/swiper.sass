@@ -1,0 +1,66 @@
+.swiper-wrapper
+  padding-bottom: 35px
+
+.swiper-pagination
+  right: 3px
+
+.swiper-pagination-bullet
+  box-sizing: border-box
+  position: relative
+  border: 1px solid $item-grey
+  background-color: $white
+  opacity: 1
+
+  @media (hover: hover), screen and (min-width: 0\0)
+    &:hover,
+    &:active,
+    &:focus
+      opacity: 0.8
+
+.swiper-pagination-bullet-active
+  background-color: $green
+  opacity: 1
+
+.swiper-buttons
+  position: relative
+  display: flex
+  box-shadow: 0px 0px 6px 0px rgba(164, 164, 164, 0.20)
+  width: 98px
+  height: 66px
+
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+    z-index: 11
+    width: 1px
+    height: 50px
+    margin: auto
+    background-color: $item-grey
+
+.button-prev,
+.button-next
+  position: relative
+  width: 49px
+  height: 66px
+  border-radius: $all-border-radius
+
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    margin: auto
+    width: 8px
+    height: 16px
+    background-image: url('../img/icon-arrow.svg')
+    background-size: cover
+
+.button-next
+  &::after
+    transform: rotate(180deg)

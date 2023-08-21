@@ -1,0 +1,113 @@
+.order-container
+  display: flex
+  align-items: stretch
+  margin: auto
+
+.order-header
+  margin-bottom: 15px
+
+.order-text-image
+  overflow: hidden
+  position: relative
+  width: 458px
+  min-width: 458px
+  margin-right: 2px
+  background-color: $block-grey
+  border-radius: $all-border-radius
+  text-align: center
+
+  @media(max-width: $max-tablet)
+    max-width: 265px
+    min-width: 265px
+
+  @media(max-width: $max-mobile)
+    display: none
+
+  img
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: 1
+    margin: auto
+
+    @media(max-width: $max-tablet)
+      left: -70px
+      width: 386px
+      height: 319px
+
+.order-circle-text
+  position: absolute
+  left: 52%
+  bottom: 8px
+  font-size: 35px
+  color: $icon-grey
+  text-transform: lowercase
+  letter-spacing: 2px
+
+  @media(max-width: $max-tablet)
+    font-size: 22px
+    bottom: 107px
+    left: 54%
+
+  span
+    display: inline-block
+
+.order-texts
+  box-sizing: border-box
+  width: 100%
+  min-height: 184px
+  padding: 50px
+  border-radius: $all-border-radius
+  background-color: $block-grey
+
+  @media(max-width: $max-tablet)
+    min-height: 340px
+    padding: 30px
+
+  @media(max-width: $max-mobile)
+    min-height: auto
+    max-width: 500px
+    margin: auto
+    padding: 25px 15px
+
+.order-text
+  margin-bottom: 25px
+
+  @media(max-width: $max-tablet)
+    margin-bottom: 20px
+
+.order-form-item-socials
+  display: flex
+
+  input
+    margin-right: 25px
+
+    @media(max-width: $max-tablet)
+      margin-right: 5px
+
+.order-form-item
+  width: 100%
+  margin-bottom: 10px
+
+  input
+    width: 100%
+
+.order-form-button
+  min-height: 63px
+  margin-top: 20px
+  padding: 15px 50px
+  font-size: 18px
+  text-transform: uppercase
+
+  @media(max-width: $max-mobile)
+    min-height: 45px
+
+  @media(max-width: $max-mobile)
+    max-width: 100%
+    width: 100%
+    margin-top: 10px
+    font-size: 14px
+
+.order-form-list
+  margin-bottom: 5px

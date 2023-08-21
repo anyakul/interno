@@ -1,0 +1,266 @@
+.intro
+  overflow: hidden
+  position: relative
+  background-position: 0 100px
+  background-size: 1073px 634px
+  background-repeat: no-repeat
+  padding-bottom: 15px
+  margin-bottom: 80px
+
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -2
+    display: block
+    width: 100%
+    height: 100%
+    background: linear-gradient(90deg, #FDFBFB 0%, #EBEDEE 100%)
+    background-size: cover
+
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+    display: block
+    width: 1073px
+    height: 634px
+    background-image: url('../img/intro-back.webp')
+    background-size: 100%
+    background-repeat: no-repeat
+
+    @media(max-width: $max-tablet)
+      top: 20%
+      max-width: 100%
+      height: 100%
+      width: 100%
+      margin: auto
+
+  @media(max-width: $max-tablet)
+    padding-bottom: 10px
+
+  @media(max-width: $max-mobile)
+    padding-bottom: 15px
+    margin-bottom: 40px
+
+.intro-container
+  position: relative
+
+  &::before
+    content: ''
+    position: absolute
+    bottom: 0
+    left: -384px
+    z-index: 3
+    display: block
+    width: 384px
+    height: 361px
+    background-image: url('../img/intro-detail-1.webp')
+    background-size: cover
+
+    @media(max-width: $max-tablet)
+      left: 0
+      width: 301px
+      height: 283px
+      bottom: -10px
+
+    @media(max-width: $max-mobile)
+      width: 162px
+      height: 128px
+      bottom: -15px
+
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    right: -315px
+    display: block
+    width: 315px
+    height: 471px
+    background-image: url('../img/intro-detail-2.webp')
+    background-size: cover
+
+    @media(max-width: $max-tablet)
+      right: 0
+      width: 247px
+      height: 370px
+
+    @media(max-width: $max-mobile)
+      display: none
+
+.intro-sliders-list
+  overflow: hidden
+
+.intro-slider
+  position: static
+  display: flex
+  align-items: flex-start
+  width: 100%
+  padding-top: 220px
+  padding-bottom: 60px
+
+  @media(max-width: $max-tablet)
+    display: block
+    padding-top: 157px
+    padding-bottom: 215px
+
+  @media(max-width: $max-mobile)
+    padding-top: 105px
+    padding-bottom: 46px
+
+.intro-texts
+  width: 53%
+  max-width: 615px
+  margin-top: 30px
+  margin-right: auto
+
+  @media(max-width: $max-tablet)
+    display: flex
+    flex-direction: column
+    width: 100%
+    max-width: 100%
+    margin-top: 0
+
+.intro-header
+  width: 98%
+  max-width: 589px
+  margin-bottom: 25px
+  font-size: 50px
+  line-height: 130%
+
+  @media(max-width: $max-tablet)
+    margin-bottom: 10px
+    order: 1
+
+  @media(max-width: $max-mobile)
+    font-size: 25px
+    margin-bottom: 15px
+    max-width: 500px
+
+  br
+    @media(max-width: $max-mobile)
+      display: none
+
+.intro-label
+  margin-left: auto
+  margin-bottom: -40px
+  transform: rotate(12deg)
+  padding: 12px 16px
+  font-weight: 600
+
+  @media(max-width: $max-tablet)
+    order: 2
+    margin-left: 0
+    transform: rotate(-5deg)
+    margin-bottom: 20px
+    padding: 7px 16px
+    height: 36px
+
+  @media(max-width: $max-mobile)
+    margin-bottom: 14px
+
+.intro-text
+  display: flex
+  width: 97%
+
+  @media(max-width: $max-tablet)
+    order: 3
+    width: 50%
+
+  @media(max-width: $max-mobile)
+    max-width: 500px
+    width: 100%
+    margin-bottom: 20px
+
+  svg
+    margin-top: 10px
+    min-width: 42px
+    max-width: 42px
+    height: 3px
+    margin-right: 20px
+
+    @media(max-width: $max-mobile)
+      margin-right: 10px
+      margin-top: 8px
+      min-width: 26px
+      max-width: 26px
+
+.intro-form
+  display: block
+  width: 300px
+  margin-right: 100px
+  padding: 30px
+  background-color: $white
+  border-radius: $all-border-radius
+
+  @media(max-width: $max-tablet)
+    position: absolute
+    bottom: 0
+    right: 0
+    margin-right: 0
+    margin-bottom: -42px
+
+  @media(max-width: $max-mobile)
+    position: relative
+    width: 161px
+    padding: 0
+
+.intro-form-item
+  margin-bottom: 10px
+  width: 100%
+
+  @media(max-width: $max-mobile)
+    display: none
+
+  input
+    width: 100%
+
+.intro-form-button
+  display: block
+  width: 50%
+  text-align: center
+
+  @media(max-width: $max-mobile)
+    width: 100%
+
+.intro-nav-buttons
+  display: flex
+
+  @media(max-width: $max-tablet)
+    position: absolute
+    bottom: 0
+    left: 24px
+
+  @media(max-width: $max-mobile)
+    position: static
+    width: fit-content
+    margin-left: auto
+
+.intro-button-prev,
+.intro-button-next
+  display: block
+  width: 40px
+  height: 40px
+  cursor: pointer
+  border-radius: 50%
+  background-image: url(../img/icon-arrow-intro.svg)
+  background-size: 64px 64px
+  background-position: -12px -12px
+  bottom: 35px
+  margin-right: 20px
+
+  @media (hover: hover), screen and (min-width: 0\0)
+    &:hover,
+    &:active,
+    &:focus
+      opacity: 0.8
+
+  @media(max-width: $max-mobile)
+    margin-right: 0
+    margin-left: 20px
+
+.intro-button-next
+  transform: rotate(180deg)
