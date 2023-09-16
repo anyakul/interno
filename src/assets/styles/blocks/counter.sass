@@ -1,0 +1,38 @@
+.counter
+  padding: 150px 0
+  background-color: $light-brown
+
+.counter-list
+  display: flex
+  align-items: stretch
+
+.counter-item
+  position: relative
+  width: 25%
+  text-align: center
+
+  &:last-child
+    &::before
+      display: none
+
+  &::before
+    content: ''
+    position: absolute
+    right: 0
+    top: 0
+    bottom: 0
+    width: 1px
+    height: 90%
+    margin: auto
+    background: $brown
+
+.counter-item-header
+  font-size: 85px
+  line-height: 125%
+  letter-spacing: 1.7px
+  color: $brown
+
+.counter-item-text
+  font-size: 22px
+  line-height: 150%
+  letter-spacing: 0.22x

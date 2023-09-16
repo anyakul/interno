@@ -1,0 +1,70 @@
+.blog-info
+  margin-top: 100px
+  width: 70%
+
+  p,
+  li
+    margin-bottom: 24px
+    font-size: 22px
+    line-height: 155%
+    letter-spacing: 0.22px
+
+.blog-info-container
+  display: flex
+
+.blog-info-header
+  margin-bottom: 10px
+  font-size: 50px
+  line-height: 125%
+  letter-spacing: 1px
+
+.blog-info-image
+  width: 100%
+  border-radius: 50px
+  margin-bottom: 56px
+
+.blog-info-date
+  display: flex
+  justify-content: space-between
+  margin-bottom: 48px
+
+.blog-info-item
+  margin-bottom: 10px
+
+.blog-info-item-list
+  counter-reset: my-counter
+
+  li
+    display: flex
+
+    &::before
+      content: counter(my-counter)
+      counter-increment: my-counter
+      margin-right: 10px
+      font-size: 20px
+      line-height: 125%
+      letter-spacing: 0.4px
+      color: $brown
+
+.blog-info-quote
+  margin: 35px 0
+  padding: 53px 225px
+  background: $light-brown
+  border-radius: 50px
+
+  .blog-info-mark
+    color: $brown
+    font-size: 200px
+    line-height: 100%
+    margin-top: -100px
+    text-align: center
+    font-family: $headers-font
+    transform: rotate(180deg)
+
+.blog-info-quote-text
+  text-align: center
+  font-size: 25px
+  font-style: italic
+  line-height: 125%
+  letter-spacing: 0.5px
+  color: $brown

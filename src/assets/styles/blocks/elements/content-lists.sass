@@ -1,0 +1,103 @@
+.images-double-list
+  @include flex(flex-start, stretch)
+  margin: 20px 0
+
+  li
+    width: 328px
+    height: 250px
+    background-color: $item-back
+    margin-right: 17px
+
+    @media(max-width: $max-mobile)
+      width: 145px
+      height: 110px
+      margin-right: 10px
+
+    img
+      @include image
+
+.list
+  margin-top: 20px
+  margin-bottom: 20px
+
+  @media(max-width: $max-mobile)
+    margin-top: 15px
+    margin-bottom: 15px
+
+.list-after-header
+  margin-top: 15px
+  margin-bottom: 20px
+
+  @media(max-width: $max-mobile)
+    margin-top: 12px
+    margin-bottom: 15px
+
+.list-header
+  margin-top: 20px
+  margin-bottom: 15px
+
+  @media(max-width: $max-mobile)
+    margin-top: 15px
+    margin-bottom: 12px
+
+.dot-list
+  p
+    @include text
+    position: relative
+    margin-bottom: 12px
+    margin-left: 20px
+
+    @media(max-width: $max-mobile)
+      margin-bottom: 10px
+
+    &:before
+      content: ""
+      position: absolute
+      top: 5px
+      left: -20px
+      min-width: 6px
+      height: 6px
+      margin-right: 8px
+      background-color: $grey
+      border-radius: 50%
+
+.dash-list
+  p
+    @include text
+    position: relative
+    margin-bottom: 12px
+    margin-left: 30px
+
+    @media(max-width: $max-mobile)
+      margin-bottom: 10px
+      margin-left: 22px
+
+    &:before
+      content: ""
+      position: absolute
+      top: 8px
+      left: -30px
+      width: 20px
+      height: 1px
+      background-color: $grey
+      margin-right: 5px
+
+      @media(max-width: $max-mobile)
+        width: 14px
+        left: -22px
+
+.tick-list
+  p
+    @include flex(flex-start, flex-start)
+    @include text
+    margin-bottom: 15px
+
+    &:before
+      content: ""
+      top: 5px
+      left: -20px
+      min-width: 14px
+      width: 14px
+      height: 14px
+      margin-right: 15px
+      background-image: url(../img/icon-tick.svg)
